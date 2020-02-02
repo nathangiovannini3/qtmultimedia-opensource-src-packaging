@@ -1,3 +1,11 @@
+qtmultimedia-opensource-src (5.12.2+ubports) xenial; urgency=low
+
+* New upstream release.
+  * Bump Qt build-dependencies to 5.12.2.
+  * Update symbols files from the current build log.
+
+-- Nathan Giovannini <nathan95@live.it>  Sun, 02 Feb 2019 00:31:17 -0500
+
 qtmultimedia-opensource-src (5.9.1+ubports) xenial; urgency=low
 
   * Merge from Debian Sid. Remaining change:
