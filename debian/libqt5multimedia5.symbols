@@ -1,6 +1,9 @@
-# SymbolsHelper-Confirmed: 5.9.0~rc amd64
+# SymbolsHelper-Confirmed: 5.12.2 amd64 armhf i386
 libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  Qt_5.0@Qt_5.0 5.6.0~beta
+ Qt_5.10@Qt_5.10 5.10.1
+ Qt_5.11@Qt_5.11 5.11.1
+ Qt_5.12@Qt_5.12 5.12.0
  Qt_5.1@Qt_5.1 5.6.0~beta
  Qt_5.2@Qt_5.2 5.6.0~beta
  Qt_5.3@Qt_5.3 5.6.0~beta
@@ -248,12 +251,14 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZN12QMediaPlayer16audioRoleChangedEN6QAudio4RoleE@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer16staticMetaObjectE@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer18mediaStatusChangedENS_11MediaStatusE@Qt_5 5.6.0~beta
+ _ZN12QMediaPlayer18setCustomAudioRoleERK7QString@Qt_5 5.11.1
  _ZN12QMediaPlayer18supportedMimeTypesE6QFlagsINS_4FlagEE@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer19bufferStatusChangedEi@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer19currentMediaChangedERK13QMediaContent@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer19playbackRateChangedEd@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer21audioAvailableChangedEb@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer21videoAvailableChangedEb@Qt_5 5.6.0~beta
+ _ZN12QMediaPlayer22customAudioRoleChangedERK7QString@Qt_5 5.11.1
  _ZN12QMediaPlayer24setNetworkConfigurationsERK5QListI21QNetworkConfigurationE@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer27networkConfigurationChangedERK21QNetworkConfiguration@Qt_5 5.6.0~beta
  _ZN12QMediaPlayer4bindEP7QObject@Qt_5 5.6.0~beta
@@ -854,6 +859,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZN19QPlaylistFileParserD0Ev@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN19QPlaylistFileParserD1Ev@Qt_5_PRIVATE_API 5.9.0~rc
  _ZN19QPlaylistFileParserD2Ev@Qt_5_PRIVATE_API 5.9.0~rc
+ _ZN19QVideoSurfaceFormat11setMirroredEb@Qt_5 5.11.1
  _ZN19QVideoSurfaceFormat11setPropertyEPKcRK8QVariant@Qt_5 5.6.0~beta
  _ZN19QVideoSurfaceFormat11setViewportERK5QRect@Qt_5 5.6.0~beta
  _ZN19QVideoSurfaceFormat12setFrameRateEd@Qt_5 5.6.0~beta
@@ -1166,6 +1172,15 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZN22QMetaDataWriterControlD0Ev@Qt_5 5.6.0~beta
  _ZN22QMetaDataWriterControlD1Ev@Qt_5 5.6.0~beta
  _ZN22QMetaDataWriterControlD2Ev@Qt_5 5.6.0~beta
+ _ZN23QCustomAudioRoleControl11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControl11qt_metacastEPKc@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControl16staticMetaObjectE@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControl22customAudioRoleChangedERK7QString@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControlC1EP7QObject@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControlC2EP7QObject@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControlD0Ev@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControlD1Ev@Qt_5 5.11.1
+ _ZN23QCustomAudioRoleControlD2Ev@Qt_5 5.11.1
  _ZN23QMediaAudioProbeControl11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0~beta
  _ZN23QMediaAudioProbeControl11qt_metacastEPKc@Qt_5 5.6.0~beta
  _ZN23QMediaAudioProbeControl16staticMetaObjectE@Qt_5 5.6.0~beta
@@ -1652,9 +1667,11 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZNK12QMediaPlayer12bufferStatusEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer12currentMediaEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer12playbackRateEv@Qt_5 5.6.0~beta
+ _ZNK12QMediaPlayer15customAudioRoleEv@Qt_5 5.11.1
  _ZNK12QMediaPlayer16isAudioAvailableEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer16isVideoAvailableEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer19supportedAudioRolesEv@Qt_5 5.6.0~beta
+ _ZNK12QMediaPlayer25supportedCustomAudioRolesEv@Qt_5 5.11.1
  _ZNK12QMediaPlayer27currentNetworkConfigurationEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer5errorEv@Qt_5 5.6.0~beta
  _ZNK12QMediaPlayer5mediaEv@Qt_5 5.6.0~beta
@@ -1847,6 +1864,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZNK19QPlaylistFileParser10metaObjectEv@Qt_5_PRIVATE_API 5.6.0~beta
  _ZNK19QVideoSurfaceFormat10frameWidthEv@Qt_5 5.6.0~beta
  _ZNK19QVideoSurfaceFormat10handleTypeEv@Qt_5 5.6.0~beta
+ _ZNK19QVideoSurfaceFormat10isMirroredEv@Qt_5 5.11.1
  _ZNK19QVideoSurfaceFormat11frameHeightEv@Qt_5 5.6.0~beta
  _ZNK19QVideoSurfaceFormat11pixelFormatEv@Qt_5 5.6.0~beta
  _ZNK19QVideoSurfaceFormat13propertyNamesEv@Qt_5 5.6.0~beta
@@ -1941,6 +1959,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZNK22QMediaPlaylistProvider10metaObjectEv@Qt_5_PRIVATE_API 5.6.0~beta
  _ZNK22QMetaDataReaderControl10metaObjectEv@Qt_5 5.6.0~beta
  _ZNK22QMetaDataWriterControl10metaObjectEv@Qt_5 5.6.0~beta
+ _ZNK23QCustomAudioRoleControl10metaObjectEv@Qt_5 5.11.1
  _ZNK23QMediaAudioProbeControl10metaObjectEv@Qt_5 5.6.0~beta
  _ZNK23QMediaPlaylistNavigator10metaObjectEv@Qt_5_PRIVATE_API 5.6.0~beta
  _ZNK23QMediaPlaylistNavigator11currentItemEv@Qt_5_PRIVATE_API 5.6.0~beta
@@ -2078,6 +2097,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZTI22QMediaPlaylistProvider@Qt_5_PRIVATE_API 5.6.0~beta
  _ZTI22QMetaDataReaderControl@Qt_5 5.6.0~beta
  _ZTI22QMetaDataWriterControl@Qt_5 5.6.0~beta
+ _ZTI23QCustomAudioRoleControl@Qt_5 5.11.1
  _ZTI23QMediaAudioProbeControl@Qt_5 5.6.0~beta
  _ZTI23QMediaBindableInterface@Qt_5 5.6.0~beta
  _ZTI23QMediaPlaylistNavigator@Qt_5_PRIVATE_API 5.6.0~beta
@@ -2170,6 +2190,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZTS22QMediaPlaylistProvider@Qt_5_PRIVATE_API 5.6.0~beta
  _ZTS22QMetaDataReaderControl@Qt_5 5.6.0~beta
  _ZTS22QMetaDataWriterControl@Qt_5 5.6.0~beta
+ _ZTS23QCustomAudioRoleControl@Qt_5 5.11.1
  _ZTS23QMediaAudioProbeControl@Qt_5 5.6.0~beta
  _ZTS23QMediaBindableInterface@Qt_5 5.6.0~beta
  _ZTS23QMediaPlaylistNavigator@Qt_5_PRIVATE_API 5.6.0~beta
@@ -2261,6 +2282,7 @@ libQt5Multimedia.so.5 libqt5multimedia5 #MINVER#
  _ZTV22QMediaPlaylistProvider@Qt_5_PRIVATE_API 5.6.0~beta
  _ZTV22QMetaDataReaderControl@Qt_5 5.6.0~beta
  _ZTV22QMetaDataWriterControl@Qt_5 5.6.0~beta
+ _ZTV23QCustomAudioRoleControl@Qt_5 5.11.1
  _ZTV23QMediaAudioProbeControl@Qt_5 5.6.0~beta
  _ZTV23QMediaBindableInterface@Qt_5 5.6.0~beta
  _ZTV23QMediaPlaylistNavigator@Qt_5_PRIVATE_API 5.6.0~beta
